@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background-color: lightgray;
+    max-width: 1440px;
+    height: 950px;
+    margin: auto;
+}
+
+.container {
+    width: 50%;
+    height: 70%;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-items {
+    margin-top: 25px;
+}
+
+#flex-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal-line  { 
+    display: inline-block;
+    border-top: 2px solid black;
+}
+
+p{
+    display: inline-block;
+    position: relative;
+    left: 5px;
+}
+
+.hr1 {
+    display: inline-block;
+    width: 140px;
+    position: relative;
+    bottom: 2px;
+    
+}
+
+.hr2 {
+    display: inline-block;
+    width: 140px;
+    position: relative;
+    bottom: 2px;
+    left: 10px;
+} 
+
+.flex-child {
+    margin-top: 25px;
+    position: relative;
+}
+
+.child1 {
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid lightgray;
+}
+
+.child1:hover {
+    background-color: #ebfbff;
+
+}
+
+.img1 {
+    position: relative;
+    left: 180px;
+    top: 4px;
+    mix-blend-mode:darken;
+}
+
+
+.child2 {
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    /* margin-right: 10px; */
+}
+
+
+
+.img2 {
+    position: relative;
+    top: 0.5px;
+    left: -5px;
+    mix-blend-mode:darken;
+    overflow: hidden;
+
+}
+
+.child2:hover {
+    background-color: rgb(234, 229, 229);
+
+}
+
+/* .child2::placeholder {
+    position: relative;
+    left: 10px;
+    color: black;
+    font-size: medium;
+} */
+
+.child3 {
+    width: 300px;
+    padding: 20px 10px;
+    border: 1px solid lightgray;
+    position: relative;
+}
+
+.child3:focus {
+    color: rgb(99, 99, 174);
+}
+
+.flex-child input {
+    border: 2px solid darkgray;
+    border-radius: 4px;
+    display: block;
+    padding: 20px;
+}
+
+.flex-child input:focus {
+    outline: 1;
+    outline-color:lightskyblue;
+}
+
+.flex-child input:focus::placeholder {
+    color:lightskyblue;
+    padding-bottom: 3px;
+}
+
+.flex-child input::placeholder {
+    position: relative;
+    color: lightgrey;
+    font-size: medium;
+
+}
+
+.flex-child.success input {
+	border-color: #2ecc71;
+}
+
+.flex-child.error input {
+	border-color: #e74c3c;
+}
+
+.flex-child small {
+    color: #e74c3c;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+}
+
+.flex-child.error small {
+	visibility: visible;
+}
+
+.flex-child i {
+    position: absolute;
+    /* top: 40px; */
+    bottom: 38px;
+    right: 20px;
+    visibility: hidden;
+
+}
+
+.flex-child.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.flex-child.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.btn1 {
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-size: large;
+    font-weight:600;
+    cursor: pointer;
+    border: 1px solid lightgray;
+}
+
+.btn1:hover {
+    background-color: rgb(46, 43, 43);
+}
+
+.btn2 {
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    font-size: medium;
+    font-weight:500;
+    cursor: pointer;
+    border: 1px solid lightgray;
+}
+
+.btn2:hover {
+    background-color: rgb(234, 229, 229);
+}
+
+p a{
+    text-decoration: none;
+    color: rgb(42, 164, 208);
+}
+
+p a:hover {
+    text-decoration:underline;
+    /* color: rgb(118, 162, 213); */
+}
+
+
+ @media (min-width: 250px) and (max-width: 820px) {
+
+    .container {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+ }
